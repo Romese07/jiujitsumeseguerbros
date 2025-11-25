@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meseguer Brothers BJJ | Román Meseguer</title>
+    <!-- Carga de Tailwind CSS --><script src="https://cdn.tailwindcss.com"></script>
+    <!-- Configuración de Tailwind para usar el color rojo como acento --><script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        'bjj-dark': '#0f0f0f',
+                        'bjj-accent': '#e31e25', // Rojo fuerte, inspirado en la agresividad del logo.
+                        'bjj-light': '#f4f4f4',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    },
+                }
+            }
+        }
+    </script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap" rel="stylesheet">
+    <style>
+        /* Estilos personalizados para el fondo y la sección hero */
+        .hero-section {
+            /* Ruta Relativa a la carpeta 'assets' para el fondo */
+            background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.9)), url('assets/logo_circulo_rojo_y_negro.png');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        /* Estilo para los iconos de cinturón/puntos de logro */
+        .achievement-point {
+            position: relative;
+            padding-left: 1.5rem;
+        }
+        .achievement-point::before {
+            content: '•';
+            position: absolute;
+            left: 0;
+            top: 0;
+            color: #e31e25; /* Color de acento */
+            font-size: 1.5rem;
+            line-height: 1;
+        }
+    </style>
+</head>
+<body class="bg-bjj-dark text-bjj-light font-sans antialiased">
+
+    <!-- Sección de Cabecera (Hero) y Navegación --><header class="hero-section text-center py-20 md:py-32">
+        <div class="max-w-6xl mx-auto px-4">
+            <!-- Ruta Relativa a la carpeta 'assets' para el logo principal --><img src="assets/logo_circulo_rojo_y_negro.png" alt="Logo Meseguer Brothers Jiu-Jitsu"
+                 class="mx-auto w-32 h-32 md:w-40 md:h-40 rounded-full border-4 border-bjj-accent shadow-2xl mb-6 object-cover">
+            
+            <h1 class="text-4xl sm:text-6xl font-extrabold tracking-tight text-bjj-light uppercase">
+                Meseguer Brothers BJJ
+            </h1>
+            <p class="mt-4 text-xl sm:text-2xl font-light text-bjj-light/80">
+                Arte Suave. Humildad. Trabajo Duro.
+            </p>
+        </div>
+    </header>
+
+    <!-- Contenido Principal - Perfil de Román Meseguer --><main class="py-16 md:py-24">
+        <div class="max-w-6xl mx-auto px-4">
+
+            <!-- Sección de Título y Foto de Román --><section class="mb-16 md:mb-24 flex flex-col md:flex-row items-center md:items-start gap-8">
+                <!-- Ruta Relativa a la carpeta 'assets' para la foto de perfil --><div class="md:w-1/3 flex justify-center md:justify-start">
+                    <img src="assets/roman_perfil_exagerado.heic" alt="Foto de Román Meseguer"
+                         class="w-64 h-64 md:w-80 md:h-80 rounded-xl object-cover border-4 border-bjj-accent/50 shadow-xl">
+                </div>
+
+                <!-- Resumen y Texto de Introducción --><div class="md:w-2/3 text-center md:text-left">
+                    <h2 class="text-3xl sm:text-4xl font-bold text-bjj-accent mb-4">Román Meseguer</h2>
+                    <p class="text-xl font-medium mb-4 text-bjj-light/90">
+                        Cinturón Morado | Instructor Infantil Tizona Fight Team
+                    </p>
+                    <div class="text-lg text-bjj-light/70 space-y-4 leading-relaxed">
+                        <p>Mi camino en el Jiu-Jitsu comenzó en noviembre de 2012 en Venezuela, cuando entré por primera vez al tatami del Venezuela JiuJitsu Team (VJJT). Mis primeros maestros me transmitieron no solo técnica, sino el respeto y la marcialidad que aún guían cada uno de mis entrenamientos.</p>
+                        <p>Hoy entreno 5 días a la semana, enfocado en la constancia, la efectividad y en seguir evolucionando siempre desde la humildad. Ser instructor de niños me llena de orgullo, y mi mayor fortaleza sigue siendo considerarme siempre un estudiante del arte suave.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Trayectoria (Timeline) --><section class="mb-16 md:mb-24">
+                <h3 class="text-3xl font-extrabold text-bjj-light border-b-2 border-bjj-accent pb-2 mb-8 text-center uppercase">
+                    Trayectoria y Logros
+                </h3>
+                
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 text-bjj-light/80">
+                    
+                    <!-- Columna 1: 2012 - 2016 --><div class="p-6 bg-bjj-dark/50 rounded-lg shadow-lg border border-bjj-accent/20 transition hover:bg-bjj-dark/70">
+                        <p class="text-2xl font-bold text-bjj-accent mb-4">Inicios (2012–2016)</p>
+                        <ul class="space-y-3 text-base">
+                            <li class="achievement-point">**2012 (Venezuela):** Inicio en VJJT con Jorge Malecón Ochoa y Ciriaco de la Porta.</li>
+                            <li class="achievement-point">**2014–2016:** Complementa con la práctica de Judo en la Universidad Experimental Marítima del Caribe (Prof. Douglas Cardoso).</li>
+                        </ul>
+                    </div>
+
+                    <!-- Columna 2: 2018 - 2022 --><div class="p-6 bg-bjj-dark/50 rounded-lg shadow-lg border border-bjj-accent/20 transition hover:bg-bjj-dark/70">
+                        <p class="text-2xl font-bold text-bjj-accent mb-4">Evolución en Barcelona (2018–2022)</p>
+                        <ul class="space-y-3 text-base">
+                            <li class="achievement-point">**2018 (Barcelona):** Entrenamiento con Essio Andrade (GFTeam) y Robin Gracie.</li>
+                            <li class="achievement-point">Obtención del **Cinturón Azul** (Essio Andrade).</li>
+                            <li class="achievement-point">**2022:** Se incorpora al Tizona Fight Team – Cícero Costha en Castelldefels.</li>
+                        </ul>
+                    </div>
+                    
+                    <!-- Columna 3: 2024 - Actualidad --><div class="p-6 bg-bjj-dark/50 rounded-lg shadow-lg border border-bjj-accent/20 transition hover:bg-bjj-dark/70">
+                        <p class="text-2xl font-bold text-bjj-accent mb-4">Momento Actual (2024)</p>
+                        <ul class="space-y-3 text-base">
+                            <li class="achievement-point">**2024:** Ascenso a **Cinturón Morado** (Edu Da Casa y Cícero Costha).</li>
+                            <li class="achievement-point">**Actualidad:** Instructor de niños y responsable del equipo infantil del Tizona Fight Team.</li>
+                            <li class="achievement-point">Entrenamiento constante 5 días por semana.</li>
+                        </ul>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Sección de Valores Clave --><section class="text-center">
+                <h3 class="text-3xl font-extrabold text-bjj-light border-b-2 border-bjj-accent pb-2 mb-8 uppercase">
+                    Valores Esenciales del Arte Suave
+                </h3>
+                
+                <div class="flex flex-wrap justify-center gap-4 text-center">
+                    <!-- Mapeo de Valores --><div class="value-card">
+                        <span class="text-bjj-accent text-3xl mb-1 block">🥋</span>
+                        <p class="font-semibold">Humildad</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="text-bjj-accent text-3xl mb-1 block">🤝</span>
+                        <p class="font-semibold">Trabajo en Equipo</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="text-bjj-accent text-3xl mb-1 block">💪</span>
+                        <p class="font-semibold">Trabajo Duro</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="text-bjj-accent text-3xl mb-1 block">🧠</span>
+                        <p class="font-semibold">Confianza</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="text-bjj-accent text-3xl mb-1 block">🎯</span>
+                        <p class="font-semibold">Honestidad</p>
+                    </div>
+                    <div class="value-card">
+                        <span class="text-bjj-accent text-3xl mb-1 block">🧘</span>
+                        <p class="font-semibold">Dejar el Ego</p>
+                    </div>
+                </div>
+                <!-- Estilos para las tarjetas de valor (solo necesarios para el espaciado interno) --><style>
+                    .value-card {
+                        @apply p-4 m-2 w-32 bg-bjj-dark/70 rounded-xl shadow-lg border border-bjj-accent/10 transition hover:border-bjj-accent/50;
+                    }
+                </style>
+            </section>
+
+            <!-- Sección de Background Detallado (Texto completo) --><section class="mt-20">
+                <h3 class="text-3xl font-extrabold text-bjj-light border-b-2 border-bjj-accent pb-2 mb-8 text-center uppercase">
+                    Filosofía y Detalle
+                </h3>
+                <div class="bg-bjj-dark/50 p-6 md:p-10 rounded-xl shadow-2xl text-lg space-y-6 text-bjj-light/80">
+                    <p>Mi camino en el Jiu-Jitsu comenzó en noviembre de 2012 en Venezuela, cuando entré por primera vez al tatami del Venezuela JiuJitsu Team (VJJT). Mis primeros maestros fueron Jorge Malecón Ochoa y Ciriaco de la Porta, quienes me transmitieron no solo técnica, sino el respeto y la marcialidad que aún guían cada uno de mis entrenamientos.</p>
+                    <p>Entre 2014 y 2016, complementé mi formación practicando judo en el equipo de la Universidad Experimental Marítima del Caribe, bajo las enseñanzas del profesor Douglas Cardoso, que reforzó mi disciplina, mi base de proyecciones y la importancia del control del cuerpo y la mente.</p>
+                    <p>En 2018, ya viviendo en Barcelona, continué mi desarrollo con Essio Andrade en GFTeam, y también tuve la oportunidad de entrenar con Robin Gracie en su academia, donde aprendí una visión más técnica, clásica y fluida del arte. Ese mismo año recibí mi cinturón azul de la mano de Essio, un hito que marcó un antes y un después en mi compromiso con este deporte.</p>
+                    <p>En 2022, me mudé a Castelldefels y pasé a entrenar con el Tizona Fight Team, parte del linaje Cícero Costha. Allí me convertí en discípulo de Edu Da Casa, José Muriel y Cristofer Opazos, quienes han sido pilares fundamentales en mi crecimiento actual. En 2024, recibí mi cinturón morado de la mano de Edu y del propio Cícero, un reconocimiento que agradezco profundamente.</p>
+                    <p>Actualmente soy instructor de niños, un rol que me llena de orgullo. A lo largo de mi carrera he tenido el privilegio de dirigir el equipo infantil de Tizona, y he entendido que enseñar no es imponer, sino acompañar, inspirar y transmitir valores que perduran fuera del tatami. Después de tantos años, sigo considerando que soy un estudiante del arte suave. Y esa es, quizá, mi mayor fortaleza.</p>
+                </div>
+            </section>
+
+        </div>
+    </main>
+
+    <!-- Pie de Página --><footer class="bg-bjj-accent/10 text-bjj-light/70 py-6">
+        <div class="max-w-6xl mx-auto px-4 text-center text-sm">
+            <p>&copy; 2024 Meseguer Brothers Jiu-Jitsu. Todos los derechos reservados.</p>
+            <p class="mt-1">Próximamente: ¡El perfil de mi hermano!</p>
+        </div>
+    </footer>
+
+</body>
+</html>
